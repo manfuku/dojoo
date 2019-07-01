@@ -1,0 +1,27 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background: url(https://res.cloudinary.com/manfuku/image/upload/f_auto,q_auto/dojo/landing-background.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no;
+  overflow: hidden;
+}
+
+#wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#logo {
+  max-width: 100%;
+}
+@media (min-width: 600px) {
+  #logo {
+    max-width: 75vw;
+  }
+}
