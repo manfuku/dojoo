@@ -3,23 +3,71 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>dojoo</title>
+  <title>dojo</title>
   
   
-  
-      <link rel="stylesheet" href="./style.css">
 
+	  <style>
+	  
+	  html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: url(https://res.cloudinary.com/manfuku/image/upload/f_auto,q_auto:low/dojo/landing-background.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no;
+  overflow: hidden;
+}
+
+#wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#logo {
+  max-width: 100%;
+}
+@media (min-width: 600px) {
+  #logo {
+    max-width: 75vw;
+  }
+}
+
+
+	  #cover {
+  position: fixed;
+  background: #000 ;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+</style>
   
 </head>
 
 <body>
 
+<div id="cover"></div>
   <div id="wrap">
-  <img id="logo" src="https://res.cloudinary.com/manfuku/image/upload/f_auto,q_auto/v1561967143/dojo/landing-logo.png">
+  <img id="logo" src="https://res.cloudinary.com/manfuku/image/upload/f_auto,q_auto:low/v1561967143/dojo/landing-logo.png">
 </div>
   
   
+  
+  
 
+  <script src="https://cdn.jsdelivr.net/npm/jquery@2/dist/jquery.min.js"></script>
+  <script >
+  $(window).load(function() {
+    $('#cover').fadeOut(900);
+    $('#wrap').delay(600).fadeIn(300);
+	
+});</script>
 </body>
 
 </html>
