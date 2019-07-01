@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <title>dojo</title>
   
-  
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 	  <style>
 	  
 	  html, body {
@@ -15,7 +14,7 @@
 }
 
 body {
-  background: url(https://res.cloudinary.com/manfuku/image/upload/f_auto,q_auto:low/dojo/landing-background.jpg);
+  background: url(https://res.cloudinary.com/manfuku/image/upload/w_2048/f_auto,q_auto:low/dojo/landing-background.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no;
@@ -31,6 +30,7 @@ body {
 
 #logo {
   max-width: 100%;
+  
 }
 @media (min-width: 600px) {
   #logo {
@@ -64,8 +64,9 @@ body {
   <script src="https://cdn.jsdelivr.net/npm/jquery@2/dist/jquery.min.js"></script>
   <script >
   $(window).load(function() {
+  
     $('#cover').fadeOut(900);
-    $('#wrap').delay(600).fadeIn(300);
+    $('#wrap').hide().delay(1000).fadeIn(900);
 	
 });</script>
 </body>
